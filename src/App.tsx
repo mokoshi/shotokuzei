@@ -54,7 +54,10 @@ function App() {
       }}
     >
       <ResponsiveContainer width="100%" height="50%">
-        <LineChart data={data} margin={{ left: 30, bottom: 30 }}>
+        <LineChart
+          data={data}
+          margin={{ left: 20, bottom: 30, right: 20, top: 10 }}
+        >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis
             label={{
@@ -70,7 +73,7 @@ function App() {
               value: "所得税",
               position: "insideLeft",
               angle: -90,
-              offset: -10,
+              offset: -0,
             }}
             tickFormatter={formatter}
           />
