@@ -74,7 +74,10 @@ function App() {
             }}
             tickFormatter={formatter}
           />
-          <Tooltip formatter={formatter} labelFormatter={formatter} />
+          <Tooltip
+            formatter={(v: any) => [formatter(v), "所得税"]}
+            labelFormatter={formatter}
+          />
           <Line dataKey="zei" stroke="#178fff" dot={<CustomizedDot />} />
         </LineChart>
       </ResponsiveContainer>
